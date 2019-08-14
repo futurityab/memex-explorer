@@ -13,7 +13,7 @@ import logging
 import os
 import sys
 
-from django.conf import global_settings
+# from django.conf import global_settings
 
 from local_settings import *
 from supervisor_services import check_process_state
