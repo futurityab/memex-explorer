@@ -1,6 +1,10 @@
 [![Build Status](https://travis-ci.org/memex-explorer/memex-explorer.svg?branch=master)](https://travis-ci.org/memex-explorer/memex-explorer)
 [![Coverage Status](https://coveralls.io/repos/ContinuumIO/memex-explorer/badge.svg?branch=master)](https://coveralls.io/r/ContinuumIO/memex-explorer?branch=master)
 
+# 2019-08-14 Update is in progress
+Work is in progress to update all dependencies and needed changes to code.
+
+
 # *DISCLAIMER*
 
 *Memex explorer has currently been put on hold. Support and development on this project has ceased for the immediate future.*
