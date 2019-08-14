@@ -23,6 +23,8 @@ RUN apt-get install -y \
     rabbitmq-server \
     wget
 
+ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/jre/
+ENV PATH $JAVA_HOME:$PATH
 RUN groupadd -r explorer -g 433 && \
     useradd -u 431 -m -r -g explorer -d /home/explorer -s /bin/bash -c "Docker image user" explorer && \
 chown -R explorer:explorer /home/explorer
@@ -34,12 +36,14 @@ USER explorer
 WORKDIR /home/explorer
 RUN wget https://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh
 RUN bash ./Miniconda-latest-Linux-x86_64.sh -b
-RUN git clone https://github.com/memex-explorer/memex-explorer
+RUN git clone https://github.com/futurityab/memex-explorer
 
 WORKDIR /home/explorer/memex-explorer/
 
 WORKDIR /home/explorer/memex-explorer
 ENV PATH /home/explorer/miniconda2/bin:$PATH
+RUN pip install --upgrade pip
+RUN pip install django==1.8.5
 RUN conda update conda -y
 RUN conda install conda-env -y
 RUN conda env update
