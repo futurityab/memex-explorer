@@ -13,13 +13,13 @@ project/
 
 """
 
-from django.conf.urls import patterns, include, url
+from django.conf.urls import include, url
 from base import views
 
 
 project_slug = r'^projects/(?P<project_slug>[\w-]+)/'
 
-urlpatterns = patterns('',
+urlpatterns = [('',
     url(r'^$', views.IndexView.as_view(), name='index'),
     url(r'^seeds/$', views.SeedsListView.as_view(), name='seeds_list'),
     url(r'^seeds/(?P<seeds_slug>[\w-]+)/$', views.EditSeedsView.as_view(), name='edit_seeds'),
@@ -42,7 +42,7 @@ urlpatterns = patterns('',
         views.IndexSettingsView.as_view(), name='index_settings'),
     url(project_slug + r'datasets/(?P<index_slug>[\w-]+)/settings/delete/$',
         views.DeleteIndexView.as_view(), name='delete_index'),
-)
+)]
 
 
 # The following lines build a url route to each application listed in
