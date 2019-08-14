@@ -18,7 +18,7 @@ RUN apt-get install -y \
     libssl-dev \
     make \
     nginx \
-    openjdk-7-jdk \
+    openjdk-8-jdk \
     pkg-config \
     rabbitmq-server \
     wget
