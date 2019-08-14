@@ -4,7 +4,7 @@
 # utilization of cached steps.
 #
 # Note: As of 2015/03/05 this is Ubuntu 14.04.
-FROM ubuntu
+FROM ubuntu:18.04
 MAINTAINER Aron Ahmadia <aahmadia@continuum.io>
 
 #------------ Install development software --------------#
