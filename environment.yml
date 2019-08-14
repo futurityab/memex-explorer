@@ -40,4 +40,4 @@ dependencies:
         - elasticsearch
         - supervisor
         - djangorestframework
-        - django-filter==1.0.0
+        - django-filter==0.11.0
