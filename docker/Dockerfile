@@ -34,8 +34,8 @@ RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 USER explorer
 
 WORKDIR /home/explorer
-RUN wget https://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh
-RUN bash ./Miniconda-latest-Linux-x86_64.sh -b
+RUN wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
+RUN bash ./Miniconda2-latest-Linux-x86_64.sh -b
 RUN git clone https://github.com/futurityab/memex-explorer
 
 WORKDIR /home/explorer/memex-explorer/
