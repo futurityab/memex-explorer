@@ -43,7 +43,6 @@ WORKDIR /home/explorer/memex-explorer/
 WORKDIR /home/explorer/memex-explorer
 ENV PATH /home/explorer/miniconda2/bin:$PATH
 RUN pip install --upgrade pip
-RUN pip install django==1.8.5
 RUN conda update conda -y
 RUN conda install conda-env -y
 RUN conda env update
