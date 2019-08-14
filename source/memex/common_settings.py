@@ -13,7 +13,7 @@ import logging
 import os
 import sys
 
-# from django.conf import global_settings
+from django.conf import global_settings
 
 from local_settings import *
 from supervisor_services import check_process_state
@@ -63,9 +63,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-TEMPLATE_CONTEXT_PROCESSORS = global_settings.TEMPLATE_CONTEXT_PROCESSORS + (
-    "base.views.project_context_processor",
-)
+#TEMPLATE_CONTEXT_PROCESSORS = global_settings.TEMPLATE_CONTEXT_PROCESSORS + (
+#    "base.views.project_context_processor",
+#)
 
 ROOT_URLCONF = 'memex.urls'
 
