@@ -73,7 +73,7 @@ RUN npm install -g elasticdump
 USER root
 RUN mkdir -p /service/build
 WORKDIR /service/build
-RUN git clone https://github.com/autonlab/tad.git
+RUN git clone https://github.com/futurityab/tad.git
 
 # Build and install TAD library.
 RUN ln -s /service/build/tad/service /service/tad
