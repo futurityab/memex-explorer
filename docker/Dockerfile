@@ -66,6 +66,7 @@ RUN python manage.py migrate
 RUN python manage.py collectstatic -v0 --noinput
 
 # Install elasticdump
+RUN npm config set strict-ssl false
 RUN npm install -g elasticdump
 
 #------------- Pull TAD software --------------#
