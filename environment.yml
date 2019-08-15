@@ -36,7 +36,7 @@ dependencies:
         - django-debug-toolbar
         - coveralls
         - sphinx-rtd-theme
-        - celery
+        - celery==3.1.25
         - elasticsearch
         - supervisor
         - djangorestframework==3.5.4
