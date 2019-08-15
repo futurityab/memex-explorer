@@ -62,6 +62,7 @@ ENV CONDA_ENV_PATH /home/explorer/miniconda2
 
 # move these into another environment.yaml?  Or better, apply them as a patch?
 RUN conda install -c memex ddt
+RUN conda install pandas=0.23.0
 # TAD dependencies
 RUN pip install celery fisher elasticsearch flask flask_restful
 
