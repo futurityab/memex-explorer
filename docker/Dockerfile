@@ -21,7 +21,11 @@ RUN apt-get install -y \
     openjdk-8-jdk \
     pkg-config \
     rabbitmq-server \
-    wget
+    wget \
+    sudo \
+    redis-server \
+    sudo \
+    redis-server
 
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/jre/
 ENV PATH $JAVA_HOME:$PATH
