@@ -67,7 +67,7 @@ RUN python manage.py collectstatic -v0 --noinput
 
 # Install elasticdump
 RUN npm config set strict-ssl false
-RUN npm install -g elasticdump
+RUN npm install -g elasticdump@0.9.0
 
 #------------- Pull TAD software --------------#
 USER root
