@@ -66,6 +66,8 @@ RUN conda install -c memex ddt
 
 #Add pandas pinned version
 RUN conda install pandas=0.23.0
+#Add numpy pinned version
+RUN conda install numpy==1.15.4
 
 # TAD dependencies
 RUN pip install celery fisher elasticsearch flask flask_restful
