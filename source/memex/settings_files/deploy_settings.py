@@ -12,7 +12,7 @@ import os
 import sys
 
 from common_settings import *
-HOSTNAME='explorer.continuum.io'
+HOSTNAME='explorer.internetcompanion.net'
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '0#t((zq66&3*87djaltu-pn34%0p!*v_332f2p!$2i)w5y17f8'
@@ -29,7 +29,7 @@ DEBUG = True
 
 #Must match the urls given in deploy/nginx.conf
 EXTERNAL_APP_LOCATIONS = {
-    'ddt': 'http://explorer.continuum.io:8084',
+    'ddt': 'http://explorer.internetcompanion.net:8084',
     'kibana': '/kibana/',
 }
 
